@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenbrain</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: #88edcf;">
+
+    <!-------------------Sign Up--------------------->
+    <div class="sign">
+       <span><h3>Sign Up</h3></span>
+       <div class="brand">
+           <div class="bran">
+            <label>First Name <i class="fa fa-asterisk"></i> </label>
+           <input type="text" placeholder="First Name" id="name">
+           </div>
+           <div id="mes"></div>
+       </div>
+       <div class="brand">
+        <div class="bran">
+         <label>Last Name <i class="fa fa-asterisk"></i> </label>
+        <input type="text" placeholder="Last Name" id="last">
+        </div>
+        <div id="lastM"></div>
+    </div>
+    <div class="brand">
+        <div class="bran">
+         <label>UserName <i class="fa fa-asterisk"></i> </label>
+        <input type="text" placeholder="UserName" id="user">
+        </div>
+        <div id="messag"></div>
+    </div>
+    <div class="brand">
+        <div class="bran">
+         <label>Email <i class="fa fa-asterisk"></i> </label>
+        <input type="email" placeholder="Email" id="email">
+        </div>
+        <div id="emailM"></div>
+    </div>
+    <div class="brand">
+        <div class="bran">
+         <label>Password <i class="fa fa-asterisk"></i> </label>
+        <input type="password" placeholder="Password" id="pass">
+        </div>
+        <div id="passM"></div>
+    </div>
+    <div class="brand">
+        <div class="bran">
+         <label>School <i class="fa fa-asterisk"></i> </label>
+        <input type="text" placeholder="School" id="school">
+        </div>
+        <div id="schoolM"></div>
+    </div>
+    <div class="brand">
+        <div class="bran">
+         <label>Department <i class="fa fa-asterisk"></i> </label>
+        <input type="text" placeholder="Department" id="part">
+        </div>
+        <div id="departM"></div>
+    </div>
+    <div class="cl">
+        <button type="button" id="btn">Sign Up</button>
+    </div>
+    <div class="buttom">
+        <p>Already have an account?</p>
+        <a href="log.html" class="here">Login Here</a>
+    </div>
+    </div>
+
+   
+<script>
+ var btn= document.getElementById('btn');
+ var pass= document.getElementById('pass');
+ var email= document.getElementById('email');
+ var last= document.getElementById('last');
+ var first= document.getElementById('name');
+ var user= document.getElementById('user');
+ var depart= document.getElementById('part');
+ var school= document.getElementById('school');
+ var msg= document.getElementById('msg');
+ var msg1= document.getElementById('mes');
+ var lastM= document.getElementById('lastM');
+ var emailM= document.getElementById('emailM');
+ var schoolM= document.getElementById('schoolM');
+ var departM= document.getElementById('departM');
+ var passM= document.getElementById('passM');
+
+
+
+ btn.addEventListener('click', myFun);
+    function myFun(){
+    if(pass==" "){
+         passM.style.color='red';
+         passM.innerHTML='Password is required'
+     } else{
+         pass=" "
+     }
+};
+
+btn.addEventListener('click', myMan);
+    function myMan(){
+    if(name==" "){
+        var msg1= document.getElementById('mes');
+         msg1.style.color='red';
+         msg1.innerHTML='First Name is required'
+     } else{
+         name=" "
+     }
+};
+
+btn.addEventListener('click', myMun);
+    function myMun(){
+    if(last==" "){
+        var lastM= document.getElementById('lastM');
+         lastM.style.color='red';
+         lastM.innerHTML='Last Name is required'
+     } else{
+         last=" "
+     }
+};
+
+btn.addEventListener('click', myMin)
+ function myMin(){
+     if(user==" "){
+        var msg2= document.getElementById('messag');
+         msg2.style.color='red';
+         msg2.innerHTML='UserName is required'
+     } else{
+         user=" "
+     }
+ };
+
+ btn.addEventListener('click', myLin)
+ function myLin(){
+     if(email==" "){
+        var emailM= document.getElementById('emailM');
+         emailM.style.color='red';
+        emailM.innerHTML='Email is required'
+     } else{
+         email=" "
+     }
+ };
+
+ btn.addEventListener('click', myPen)
+ function myPen(){
+     if(school==" "){
+        var schoolM= document.getElementById('schoolM');
+         schoolM.style.color='red';
+         schoolM.innerHTML='School is required'
+     } else{
+         school=" "
+     }
+ };
+
+ 
+ btn.addEventListener('click', myPun)
+ function myPun(){
+     if(part==" "){
+        var departM= document.getElementById('departM');
+         departM.style.color='red';
+         departM.innerHTML='Department is required'
+     } else{
+         part=" "
+     }
+ };
+</script>   
+</body>
+</html>

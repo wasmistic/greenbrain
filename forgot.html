@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenbrain</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: #88edcf;">
+
+    <div class="container">
+        <div class="narvbar">
+           <p><a href="index.html">greenbrain</a></p> 
+            <a href="log.html" class="abtn">Login</a>
+        </div>
+    </div>
+
+    <!-------------------forgot--------------------->
+    <div class="container">
+        <div class="forgot">
+            <span><h3>Password Reset</h3></span>
+            <div class="parent">
+             <label>Enter your email:</label>
+             <input type="email" placeholder="user@example.com" id="mail">
+             <div id="text"></div>
+            </div>
+            <div class="box">
+                <button type="button" id="btn">Submit Email</button>
+            </div>
+         </div>
+    </div>
+    
+
+   
+<script>
+
+ var email=document.getElementById('mail');
+ var btn=document.getElementById('btn');
+
+btn.addEventListener('click',function(){
+     if(mail==" "){
+        var text=document.getElementById('text');
+         text.style.color='red';
+         text.innerHTML='Email is required';
+     }else{
+         mail=" "
+     }
+ })
+</script>   
+</body>
+</html>

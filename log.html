@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenbrain</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: #88edcf;">
+
+    <!------------------Login-------------->
+    <div class="log">
+        <h3>Sign In</h3>
+        <div class="cov sun">
+            <div class="cover">
+                <i class="fa fa-envelope"></i>
+                <input type="text" placeholder="Username or Email" id="user">
+            </div>
+            <div id="message"></div>
+        </div> 
+        <div class="cov">
+            <div class="cover">
+                <i class="fa fa-key"></i>
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <div id="text"></div>
+        </div>
+       
+        <div class="box">
+            <button type="button" id="btn">Login</button>
+        </div>
+        <div class="ash">
+            <p>New to Greenbrain?</p>
+            <a href="sign.html">Sign Up Here</a>
+        </div>
+        <a href="forgot.html" class="forgot">Forgot Password?</a>
+    </div>
+
+   
+<script>
+ var btn= document.getElementById('btn');
+ var pass= document.getElementById('password');
+ var user= document.getElementById('user');
+ btn.addEventListener('click', myFun);
+
+btn.addEventListener('click', myFon)
+function myFon(){
+    if(pass==" "){
+        var text= document.getElementById('text');
+         text.style.color='red';
+         text.innerHTML='Password is required'
+     } else{
+         pass=" "
+     }
+};
+
+
+ function myFun(){
+     if(user==" " || pass==" "){
+        var text= document.getElementById('message');
+         message.style.color='red';
+         message.innerHTML='Enter Username or Email'
+     } else{
+         user=" "
+     }
+ }
+
+</script>   
+</body>
+</html>
